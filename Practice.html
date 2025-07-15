@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color:aliceblue;
+      }
+      .zoom-img {
+      width: 450px;
+      animation: zoomIn 2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(0.95);
+        opacity: 1;
+      }
+    }
+     @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .bounce-text {
+      animation: bounce 0.8s ;
+      font-size: 24px;
+      color: #ff1493;
+      text-align: center;
+    }
+       
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-box {
+      position: relative;
+      width: 250px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 170px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+      width: 80%;
+    }
+
+    .book-btn {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 16px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    .book-btn:hover {
+      background-color: #d63384;
+    }
+    
+    </style>
+    <title>Personal portfolio</title>
+
+    <link href="Practice.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="bounce-text" style="color:crimson;line-height: 3; text-align: center; font-size:xx-large;">Maimuna Beauty Salon</h1>
+    <div>
+      <img class="zoom-img" src="Cosmetic pic.jpg" alt="Products" widht="300" height="400"; style="text-align:left;"/>
+      <img class="zoom-img" src="03-CSS-Fundamentals/Pic pic.jpg" alt="Products" widht="300" height="400"; style="text-align:left;"/>
+    <img
+      src="Screenshot 2025-07-15 143424.png"
+      alt="My photo"
+      width="300"
+      height="400" class="zoom-img";
+    />
+    <div/>
+    <h1 style="text-align:center; color:rgb(210, 12, 12); line-height: 1;">About Us</h1>
+    <p style="font-size:x-large;">
+      At <Strong>Maimuna Beauty Salon</Strong>, we believe beauty is more than just appearance — it's an experience.
+Our mission is to help you feel confident, radiant, and cared for every time you walk through our doors.
+We offer expert services in hair, skin, henna drawing, and nail care, combining modern style with personalized attention.
+    </p>
+
+    <h1 style="text-align:center; color:rgb(211, 17, 17); line-height: 1;">Our Values</h1>
+    <ul>
+      <li>Quality - We use top-tier products and techniques to ensure every service meets the highest standards.</li>
+      <li>Style - We tailor each look to match your unique personality, staying ahead of the trends.</li>
+      <li>Care - We provide a warm, welcoming environment where your comfort and satisfaction come first.</li>
+    </ul>
+    <h1 style="text-align: center; color:rgb(217, 9, 9); line-height: 1;">Our Services</h1>
+
+ <div class="image-row">
+    <div class="image-box">
+      <img src="Hiardressing.jpg" alt="Hair care">
+      <div class="text-overlay">Hairdressing</div>
+      <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tiiZztam-M2wHEUAKMvCg_ITM57ty0_wuEE-xa_wSRmVI7VR_2difVcb56sUH6FkEaewJuh4d" class="book-btn" target="_blank">Book Now</a>
+    </div>
+    <div class="image-box">
+      <img src="Henna drawing.jpg" alt="Henna drawing">
+      <div class="text-overlay">Henna drawing </div>
+     <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tiiZztam-M2wHEUAKMvCg_ITM57ty0_wuEE-xa_wSRmVI7VR_2difVcb56sUH6FkEaewJuh4d" class="book-btn" target="_blank">Book Now</a>
+    </div>
+    <div class="image-box">
+      <img src="hair oil.jpg"hair oil">
+      <div class="text-overlay">Hair oil </div>
+     <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tiiZztam-M2wHEUAKMvCg_ITM57ty0_wuEE-xa_wSRmVI7VR_2difVcb56sUH6FkEaewJuh4d" class="book-btn" target="_blank">Book Now</a>
+    </div>
+    <div class="image-box"> 
+      <img src="Nail care.jpg" alt="nail care"/>
+      <div class="text-overlay"> Nail care</div>
+      <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tiiZztam-M2wHEUAKMvCg_ITM57ty0_wuEE-xa_wSRmVI7VR_2difVcb56sUH6FkEaewJuh4d" class="book-btn" target="_blank">Book Now</a>
+    </div>
+  </div>
+    <!-- <div> 
+    <p  style="font-size: x-large; line-height: 0.0;" >Hairdressing</p>
+    <img src="Hiardressing.jpg" width="200" height="150"/>
+    <div/>
+    <p>Henna Drawing (Cilaan Saarid)</p>
+    <img style="text-align:center;" src="Henna drawing.jpg" width="200" height="150" />
+    -->
+
+    
+
+
+    <!-- <h4>Contact</h4> 
+     <address>
+      Email: <a href="saciidfariid48@gmail.com">saciidfariid48.com</a><br />
+    </address> 
+    <address>
+      📧 :
+      <a
+        href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tiiZztam-M2wHEUAKMvCg_ITM57ty0_wuEE-xa_wSRmVI7VR_2difVcb56sUH6FkEaewJuh4d"
+        >Book appointment</a
+      >
+      <br />
+      📞 : <a href="tel:+905360286734">+905360286734</a> <br />
+
+      📍 : <a href="location.html">Place</a>.<br />
+    </address>
+  -->
+    <!-- Contact Page -->
+<section id="contact" style="padding: 40px; font-family: sans-serif;">
+  <h2>Contact Us</h2>
+
+  <!-- Map Embed -->
+  <div style="margin-top: 20px;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1938.8766873772613!2d-93.1794637701332!3d44.95969005864867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b55f3209c09%3A0x14e873ad31644b9e!2s605%20Fairview%20Ave%20N%2C%20St%20Paul%2C%20MN%2055104%2C%20USA!5e0!3m2!1sen!2str!4v1752597232701!5m2!1sen!2str"
+      width="100%" height="300" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Contact Info -->
+  <div style="margin-top: 30px;;">
+    <p><strong>Phone:</strong> <a href="tel:+16125944538">+1 612 594 4538</a></p>
+    <p><strong>WhatsApp:</strong> 
+      <a href="https://wa.me/+1612 594 4538" target="_blank">Chat with us</a>
+    </p>
+    <p><strong>Address:</strong> Minnesota, USA</p>
+  </div>
+
+  <!-- Social Media Icons -->
+  <div style="margin-top: 30px;">
+    <a href="https://www.tiktok.com/@maankamuus?_t=ZM-8y3LXoKneg2&_r=1" target="_blank" style="margin-left: 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" width="30" alt="TikTok">
+    </a>
+  </div>
+</section>
+  </body>
+</html>
